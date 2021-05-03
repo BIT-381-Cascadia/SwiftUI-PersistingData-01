@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4A72F4E263DDA0C0049942A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E4A72F4D263DDA0C0049942A /* SwiftyJSON */; };
+		E4A72F50263DDCD40049942A /* JSONViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F4F263DDCD40049942A /* JSONViewer.swift */; };
+		E4A72F52263DF21B0049942A /* JSON_File_Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */; };
+		E4A72F56263E0C2F0049942A /* Realm_Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */; };
+		E4A72F59263E0DEC0049942A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E4A72F58263E0DEC0049942A /* Realm */; };
+		E4A72F5B263E0DEC0049942A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4A72F5A263E0DEC0049942A /* RealmSwift */; };
+		E4A72F5F263E30AB0049942A /* TestRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F5E263E30AB0049942A /* TestRealm.swift */; };
+		E4D804C0263F7F38009C4964 /* Realm_Viewer_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D804BF263F7F38009C4964 /* Realm_Viewer_List.swift */; };
 		E4DD8E8B2639151900C2EB03 /* SwiftUI_PersistingData_01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DD8E8A2639151900C2EB03 /* SwiftUI_PersistingData_01App.swift */; };
 		E4DD8E8D2639151900C2EB03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DD8E8C2639151900C2EB03 /* ContentView.swift */; };
 		E4DD8E8F2639151B00C2EB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DD8E8E2639151B00C2EB03 /* Assets.xcassets */; };
@@ -35,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4A72F4F263DDCD40049942A /* JSONViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewer.swift; sourceTree = "<group>"; };
+		E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_File_Viewer.swift; sourceTree = "<group>"; };
+		E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_Viewer.swift; sourceTree = "<group>"; };
+		E4A72F5E263E30AB0049942A /* TestRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRealm.swift; sourceTree = "<group>"; };
+		E4D804BF263F7F38009C4964 /* Realm_Viewer_List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm_Viewer_List.swift; sourceTree = "<group>"; };
 		E4DD8E872639151900C2EB03 /* SwiftUI-PersistingData-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-PersistingData-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DD8E8A2639151900C2EB03 /* SwiftUI_PersistingData_01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PersistingData_01App.swift; sourceTree = "<group>"; };
 		E4DD8E8C2639151900C2EB03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A72F5B263E0DEC0049942A /* RealmSwift in Frameworks */,
+				E4A72F59263E0DEC0049942A /* Realm in Frameworks */,
+				E4A72F4E263DDA0C0049942A /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4A72F5C263E2F790049942A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E4A72F4F263DDCD40049942A /* JSONViewer.swift */,
+				E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		E4A72F5D263E2F860049942A /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */,
+				E4D804BF263F7F38009C4964 /* Realm_Viewer_List.swift */,
+				E4A72F5E263E30AB0049942A /* TestRealm.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		E4DD8E7E2639151900C2EB03 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +134,8 @@
 		E4DD8E892639151900C2EB03 /* SwiftUI-PersistingData-01 */ = {
 			isa = PBXGroup;
 			children = (
+				E4A72F5D263E2F860049942A /* Realm */,
+				E4A72F5C263E2F790049942A /* JSON */,
 				E4DD8E8A2639151900C2EB03 /* SwiftUI_PersistingData_01App.swift */,
 				E4DD8E8C2639151900C2EB03 /* ContentView.swift */,
 				E4DD8E8E2639151B00C2EB03 /* Assets.xcassets */,
@@ -152,6 +189,11 @@
 			dependencies = (
 			);
 			name = "SwiftUI-PersistingData-01";
+			packageProductDependencies = (
+				E4A72F4D263DDA0C0049942A /* SwiftyJSON */,
+				E4A72F58263E0DEC0049942A /* Realm */,
+				E4A72F5A263E0DEC0049942A /* RealmSwift */,
+			);
 			productName = "SwiftUI-PersistingData-01";
 			productReference = E4DD8E872639151900C2EB03 /* SwiftUI-PersistingData-01.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +245,7 @@
 				TargetAttributes = {
 					E4DD8E862639151900C2EB03 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 					E4DD8E9C2639151B00C2EB03 = {
 						CreatedOnToolsVersion = 12.4;
@@ -223,6 +266,10 @@
 				Base,
 			);
 			mainGroup = E4DD8E7E2639151900C2EB03;
+			packageReferences = (
+				E4A72F4C263DDA0C0049942A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				E4A72F57263E0DEC0049942A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = E4DD8E882639151900C2EB03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,7 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DD8E942639151B00C2EB03 /* Persistence.swift in Sources */,
+				E4A72F52263DF21B0049942A /* JSON_File_Viewer.swift in Sources */,
+				E4A72F5F263E30AB0049942A /* TestRealm.swift in Sources */,
+				E4A72F56263E0C2F0049942A /* Realm_Viewer.swift in Sources */,
+				E4D804C0263F7F38009C4964 /* Realm_Viewer_List.swift in Sources */,
 				E4DD8E8D2639151900C2EB03 /* ContentView.swift in Sources */,
+				E4A72F50263DDCD40049942A /* JSONViewer.swift in Sources */,
 				E4DD8E972639151B00C2EB03 /* SwiftUI_PersistingData_01.xcdatamodeld in Sources */,
 				E4DD8E8B2639151900C2EB03 /* SwiftUI_PersistingData_01App.swift in Sources */,
 			);
@@ -425,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-PersistingData-01/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -436,6 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mpanitz.SwiftUI-PersistingData-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-PersistingData-01/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -582,6 +637,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4A72F4C263DDA0C0049942A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		E4A72F57263E0DEC0049942A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4A72F4D263DDA0C0049942A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4A72F4C263DDA0C0049942A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		E4A72F58263E0DEC0049942A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4A72F57263E0DEC0049942A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E4A72F5A263E0DEC0049942A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4A72F57263E0DEC0049942A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E4DD8E952639151B00C2EB03 /* SwiftUI_PersistingData_01.xcdatamodeld */ = {
