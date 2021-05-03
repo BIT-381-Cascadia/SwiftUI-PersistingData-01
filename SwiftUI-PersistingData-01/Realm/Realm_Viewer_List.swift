@@ -9,12 +9,12 @@ import SwiftUI
 import RealmSwift
 
 struct Realm_Viewer_List: View {
-    
+    /*
     @State private var peopleResults: Results<Person>
     
     init() {
-        let realm = try! Realm()
-        peopleResults = realm.objects(Person.self)
+     //   let realm = try! Realm()
+     //   peopleResults = realm.objects(Person.self)
     }
 
     func saveData() {
@@ -47,11 +47,11 @@ struct Realm_Viewer_List: View {
         print(allPeeps.count)
         return allPeeps
     }
-    
+    */
     var body: some View {
         VStack {
             Text("Realm Example")
-            HStack{
+            /*HStack{
                 Button("Load", action: {
                     peopleResults = loadData()
                 })
@@ -65,7 +65,7 @@ struct Realm_Viewer_List: View {
             ForEach(self.peopleResults.map(Person.init), id: \.self) { aPerson in
                 Text(aPerson.name)
             }
-            
+            */
         } .padding()
     }
 }
