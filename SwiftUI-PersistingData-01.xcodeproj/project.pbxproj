@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3C74DE26433C8F00A4FCA1 /* Vehicle_Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C74DD26433C8F00A4FCA1 /* Vehicle_Viewer.swift */; };
 		E4A72F4E263DDA0C0049942A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E4A72F4D263DDA0C0049942A /* SwiftyJSON */; };
 		E4A72F50263DDCD40049942A /* JSONViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F4F263DDCD40049942A /* JSONViewer.swift */; };
 		E4A72F52263DF21B0049942A /* JSON_File_Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3C74DD26433C8F00A4FCA1 /* Vehicle_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle_Viewer.swift; sourceTree = "<group>"; };
 		E4A72F4F263DDCD40049942A /* JSONViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewer.swift; sourceTree = "<group>"; };
 		E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_File_Viewer.swift; sourceTree = "<group>"; };
 		E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_Viewer.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */,
 				E4D804BF263F7F38009C4964 /* Realm_Viewer_List.swift */,
 				E4A72F5E263E30AB0049942A /* TestRealm.swift */,
+				3F3C74DD26433C8F00A4FCA1 /* Vehicle_Viewer.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3C74DE26433C8F00A4FCA1 /* Vehicle_Viewer.swift in Sources */,
 				E4DD8E942639151B00C2EB03 /* Persistence.swift in Sources */,
 				E4A72F52263DF21B0049942A /* JSON_File_Viewer.swift in Sources */,
 				E4A72F5F263E30AB0049942A /* TestRealm.swift in Sources */,

@@ -24,6 +24,15 @@ class Person: Object {
         self.picture = pic
     }
 }
+class Vehicle: Object {
+    @objc dynamic var type = ""
+    @objc dynamic var year = 0
+    convenience init(name:String, age:Int) {
+        self.init()
+        self.type = type
+        self.year = year
+    }
+}
 
 func setDefaultRealmForUser(filename: String) {
     var config = Realm.Configuration()
@@ -34,6 +43,13 @@ func setDefaultRealmForUser(filename: String) {
     // Set this as the configuration used for the default Realm
     Realm.Configuration.defaultConfiguration = config
 }
+
+class CarRealm {
+
+
+    
+}
+
 
 class TestRealm {
     
@@ -64,7 +80,38 @@ class TestRealm {
 
         // Queries are updated in realtime
         print(puppies.count) // => 1
-
+        print()
+        let newCar = Vehicle()
+        newCar.type = "Mazda"
+        newCar.year = 2015
+        
+        let newCar2 = Vehicle()
+        newCar2.type = "Ford"
+        newCar2.year = 2052
+        
+        let CarRealm = try! Realm()
+        
+        try! CarRealm.write {
+            CarRealm.add(newCar)
+            CarRealm.add(newCar2)
+        }
+        
+        let cars = CarRealm.objects(Vehicle.self)
+        
+        if let car = cars.first{
+            print(car.type)
+            print()
+        }
+        
+        let FutureCar = CarRealm.objects(Vehicle.self).filter("year > 2021")
+        
+        if let fC = FutureCar.first{
+            print(fC.type)
+            print(fC.year)
+        }
+        
+        
+        
         // OPTIONAL, ADVANCED STUFF I LEFT IN HERE WHEN I COPIED THIS CODE FROM https://docs.mongodb.com/realm-legacy/docs/swift/latest/index.html
         // Query and update from any thread
         DispatchQueue(label: "background").async {

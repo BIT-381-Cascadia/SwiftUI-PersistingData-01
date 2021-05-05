@@ -11,7 +11,8 @@ import CoreData
 struct ContentView: View {
     var body: some View {
         VStack{
-            Realm_Viewer()
+            //Realm_Viewer()
+            Vehicle_Viewer()
             //Realm_Viewer_List()
             //JSON_File_Viewer()
         }
