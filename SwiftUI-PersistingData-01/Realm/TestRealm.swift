@@ -25,6 +25,18 @@ class Person: Object {
     }
 }
 
+class Cat: Object {
+    @objc dynamic var name = ""
+    @objc dynamic var age = 0
+    convenience init(name:String, age:Int) {
+        self.init() // call designated init first
+        self.name = name
+        self.age = age
+    }
+}
+
+
+
 func setDefaultRealmForUser(filename: String) {
     var config = Realm.Configuration()
 
@@ -64,19 +76,51 @@ class TestRealm {
 
         // Queries are updated in realtime
         print(puppies.count) // => 1
+        
+        setDefaultRealmForUser(filename: "cat_DB_file")
+        
+        let myCat = Cat()
+        myCat.name = "Mittens"
+        myCat.age = 4
+        print("name of cat: \(myCat.name)")
+        
+        
+        try! realm.write {
+            realm.add(myCat)
+        }
+        
+        let myCat2 = Cat()
+        myCat2.name = "Tiger"
+        myCat2.age = 2
+        print("name of cat: \(myCat2.name)")
+        
+        try! realm.write {
+            realm.add(myCat2)
+        }
+        
+        let kittens = realm.objects(Cat.self).filter("age < 5")
+        print(kittens.count)
+        if let kitty = kittens.first {
+            print(kitty.age)
+            print(kitty.name)
+        }
+        
+        print(kittens.count)
+        
+        
 
         // OPTIONAL, ADVANCED STUFF I LEFT IN HERE WHEN I COPIED THIS CODE FROM https://docs.mongodb.com/realm-legacy/docs/swift/latest/index.html
         // Query and update from any thread
-        DispatchQueue(label: "background").async {
-            autoreleasepool {
-                let realm = try! Realm()
-                let theDog = realm.objects(Dog.self).filter("age == 1").first
-                try! realm.write {
-                    theDog!.age = 3
-                    print("written")
-                }
-            }
-        }
+//        DispatchQueue(label: "background").async {
+//            autoreleasepool {
+//                let realm = try! Realm()
+//                let theDog = realm.objects(Dog.self).filter("age == 1").first
+//                try! realm.write {
+//                    theDog!.age = 3
+//                    print("written")
+//                }
+//            }
+//        }
     }
 }
 
