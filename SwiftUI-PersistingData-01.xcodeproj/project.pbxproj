@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9389D026434F3A005F646F /* Realm_Cat_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9389CF26434F3A005F646F /* Realm_Cat_List.swift */; };
 		E4A72F4E263DDA0C0049942A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E4A72F4D263DDA0C0049942A /* SwiftyJSON */; };
 		E4A72F50263DDCD40049942A /* JSONViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F4F263DDCD40049942A /* JSONViewer.swift */; };
 		E4A72F52263DF21B0049942A /* JSON_File_Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F9389CF26434F3A005F646F /* Realm_Cat_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_Cat_List.swift; sourceTree = "<group>"; };
 		E4A72F4F263DDCD40049942A /* JSONViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewer.swift; sourceTree = "<group>"; };
 		E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_File_Viewer.swift; sourceTree = "<group>"; };
 		E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_Viewer.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */,
 				E4D804BF263F7F38009C4964 /* Realm_Viewer_List.swift */,
 				E4A72F5E263E30AB0049942A /* TestRealm.swift */,
+				3F9389CF26434F3A005F646F /* Realm_Cat_List.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				E4DD8E8D2639151900C2EB03 /* ContentView.swift in Sources */,
 				E4A72F50263DDCD40049942A /* JSONViewer.swift in Sources */,
 				E4DD8E972639151B00C2EB03 /* SwiftUI_PersistingData_01.xcdatamodeld in Sources */,
+				3F9389D026434F3A005F646F /* Realm_Cat_List.swift in Sources */,
 				E4DD8E8B2639151900C2EB03 /* SwiftUI_PersistingData_01App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

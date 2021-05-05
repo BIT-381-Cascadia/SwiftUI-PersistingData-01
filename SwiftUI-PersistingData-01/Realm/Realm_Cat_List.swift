@@ -1,49 +1,49 @@
 //
-//  Realm_Viewer.swift
+//  Realm_Cat_List.swift
 //  SwiftUI-PersistingData-01
 //
-//  Created by Mike Panitz on 5/1/21.
+//  Created by Student Account on 5/5/21.
 //
 
 import SwiftUI
 import RealmSwift
 
-struct Realm_Viewer_List: View {
+struct Realm_Cat_List: View {
     
-    @State private var peopleResults: Results<Person>
+    @State private var peopleResults: Results<Person2>
 
     init() {
         let realm = try! Realm()
-        peopleResults = realm.objects(Person.self)
+        peopleResults = realm.objects(Person2.self)
     }
 
     func saveData() {
-        let fido = Dog()
-        fido.name = "Fido"
-        fido.age = 3
+        let jeff = Cat()
+        jeff.name = "Jeff"
+        jeff.age = 4
 
-        let rex = Dog()
-        rex.name="Rex"
-        rex.age=4
+        let steve = Cat()
+        steve.name="Steve"
+        steve.age=6
 
-        let protagonist = Person()
+        let protagonist = Person2()
         protagonist.name = "???"
-        protagonist.dogs.append(fido)
-        protagonist.dogs.append(rex)
+        protagonist.cats.append(jeff)
+        protagonist.cats.append(steve)
 
         let realm = try! Realm()
 
-        let people = realm.objects(Person.self)
-        protagonist.name = "Person #" + String(people.count + 1)
+        let people = realm.objects(Person2.self)
+        protagonist.name = "Cat #" + String(people.count + 1)
         try! realm.write {
             realm.add(protagonist)
         }
     }
 
-    func loadData() -> Results<Person> {
+    func loadData() -> Results<Person2> {
 
         let realm = try! Realm()
-        let allPeeps = realm.objects(Person.self)
+        let allPeeps = realm.objects(Person2.self)
         print(allPeeps.count)
         return allPeeps
     }
@@ -62,7 +62,7 @@ struct Realm_Viewer_List: View {
                 })
             }
             
-            ForEach(self.peopleResults.map(Person.init), id: \.self) { aPerson in
+            ForEach(self.peopleResults.map(Person2.init), id: \.self) { aPerson in
                 Text(aPerson.name)
             }
             
@@ -70,10 +70,11 @@ struct Realm_Viewer_List: View {
     }
 }
 
-struct Realm_Viewer_List_Previews: PreviewProvider {
+struct Realm_Cat_List_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Realm_Viewer_List()
+            Realm_Cat_List()
         }
     }
 }
+
