@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F329C2726433C0E000EF9C0 /* Realm_viewer_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F329C2626433C0E000EF9C0 /* Realm_viewer_Exercise.swift */; };
+		5F329C292643493C000EF9C0 /* Realm_Viewer_Exercise2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F329C282643493C000EF9C0 /* Realm_Viewer_Exercise2.swift */; };
 		E4A72F4E263DDA0C0049942A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E4A72F4D263DDA0C0049942A /* SwiftyJSON */; };
 		E4A72F50263DDCD40049942A /* JSONViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F4F263DDCD40049942A /* JSONViewer.swift */; };
 		E4A72F52263DF21B0049942A /* JSON_File_Viewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F329C2626433C0E000EF9C0 /* Realm_viewer_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_viewer_Exercise.swift; sourceTree = "<group>"; };
+		5F329C282643493C000EF9C0 /* Realm_Viewer_Exercise2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_Viewer_Exercise2.swift; sourceTree = "<group>"; };
 		E4A72F4F263DDCD40049942A /* JSONViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewer.swift; sourceTree = "<group>"; };
 		E4A72F51263DF21B0049942A /* JSON_File_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON_File_Viewer.swift; sourceTree = "<group>"; };
 		E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_Viewer.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 				E4A72F55263E0C2F0049942A /* Realm_Viewer.swift */,
 				E4D804BF263F7F38009C4964 /* Realm_Viewer_List.swift */,
 				E4A72F5E263E30AB0049942A /* TestRealm.swift */,
+				5F329C2626433C0E000EF9C0 /* Realm_viewer_Exercise.swift */,
+				5F329C282643493C000EF9C0 /* Realm_Viewer_Exercise2.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F329C292643493C000EF9C0 /* Realm_Viewer_Exercise2.swift in Sources */,
 				E4DD8E942639151B00C2EB03 /* Persistence.swift in Sources */,
 				E4A72F52263DF21B0049942A /* JSON_File_Viewer.swift in Sources */,
 				E4A72F5F263E30AB0049942A /* TestRealm.swift in Sources */,
@@ -319,6 +326,7 @@
 				E4D804C0263F7F38009C4964 /* Realm_Viewer_List.swift in Sources */,
 				E4DD8E8D2639151900C2EB03 /* ContentView.swift in Sources */,
 				E4A72F50263DDCD40049942A /* JSONViewer.swift in Sources */,
+				5F329C2726433C0E000EF9C0 /* Realm_viewer_Exercise.swift in Sources */,
 				E4DD8E972639151B00C2EB03 /* SwiftUI_PersistingData_01.xcdatamodeld in Sources */,
 				E4DD8E8B2639151900C2EB03 /* SwiftUI_PersistingData_01App.swift in Sources */,
 			);

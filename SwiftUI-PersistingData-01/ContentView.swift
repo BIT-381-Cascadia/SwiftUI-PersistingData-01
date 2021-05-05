@@ -11,9 +11,10 @@ import CoreData
 struct ContentView: View {
     var body: some View {
         VStack{
-            Realm_Viewer()
+            //Realm_Viewer()
             //Realm_Viewer_List()
             //JSON_File_Viewer()
+            Realm_Viewer_Exercise2()
         }
     }
 //    @Environment(\.managedObjectContext) private var viewContext
