@@ -25,6 +25,21 @@ class Person: Object {
     }
 }
 
+/**
+ 1a-Create a new class Cat
+ */
+class Cat: Object {
+    @objc dynamic var name = ""
+    @objc dynamic var age = 0
+    @objc dynamic var sex = ""
+    convenience init(name: String, age: Int, sex: String) {
+        self.init()
+        self.name = name
+        self.age = age
+        self.sex = sex
+    }
+}
+
 func setDefaultRealmForUser(filename: String) {
     var config = Realm.Configuration()
 
@@ -77,6 +92,45 @@ class TestRealm {
                 }
             }
         }
+        
+        //1b-New object of type Cat
+        let kitty = Cat()
+        kitty.name = "Clara"
+        kitty.age = 4
+        kitty.sex = "female"
+        print("name of Cat: \(kitty.name)")
+        
+        //1c-create a new database file for the Cat object
+        setDefaultRealmForUser(filename: "Cats")
+        
+        //1d-write the new Cat object to the database
+        try! realm.write{
+            realm.add(kitty)
+        }
+        
+        //1e-Create a new object kittyCat and save it into the database
+        let kittyCat = Cat()
+        kittyCat.name = "Jack"
+        kittyCat.age = 3
+        kittyCat.sex = "male"
+        print("name of Cat: \(kittyCat.name)")
+        
+        try! realm.write{
+            realm.add(kittyCat)
+        }
+        
+        //1f-Get female cat out of the database
+        let femaleCat = realm.objects(Cat.self).filter("sex = 'female'")
+        print(femaleCat.count)
+        
+        
+        //1g-get.first method to get the result of filtering!
+        if let ct = femaleCat.first {
+            print(ct.name)
+            print(ct.age)
+            print(ct.sex)
+        }
+        
     }
 }
 
